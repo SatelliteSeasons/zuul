@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pkg_character"},{"l":"pkg_command"},{"l":"pkg_item"},{"l":"pkg_room"},{"l":"pkg_system"}]

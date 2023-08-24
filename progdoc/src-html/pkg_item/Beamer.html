@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
+</head>
+<body>
+<main role="main">
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span><a id="line.1">package pkg_item;</a>
+<span class="sourceLineNo">002</span><a id="line.2"></a>
+<span class="sourceLineNo">003</span><a id="line.3">import pkg_room.Room;</a>
+<span class="sourceLineNo">004</span><a id="line.4"></a>
+<span class="sourceLineNo">005</span><a id="line.5">/**</a>
+<span class="sourceLineNo">006</span><a id="line.6"> * Classe Beamer - Un Item spécial qui permet de mémoriser une Room et de le renvoyer.</a>
+<span class="sourceLineNo">007</span><a id="line.7"> *</a>
+<span class="sourceLineNo">008</span><a id="line.8"> * @author Richard Ho</a>
+<span class="sourceLineNo">009</span><a id="line.9"> * @version 03/04/2023</a>
+<span class="sourceLineNo">010</span><a id="line.10"> */</a>
+<span class="sourceLineNo">011</span><a id="line.11">public class Beamer extends Item</a>
+<span class="sourceLineNo">012</span><a id="line.12">{</a>
+<span class="sourceLineNo">013</span><a id="line.13">    private Room aCharge;</a>
+<span class="sourceLineNo">014</span><a id="line.14">    </a>
+<span class="sourceLineNo">015</span><a id="line.15">    /**</a>
+<span class="sourceLineNo">016</span><a id="line.16">     * Constructeur qui crée l'objet beamer avec une charge(aCharge) vide.</a>
+<span class="sourceLineNo">017</span><a id="line.17">     */</a>
+<span class="sourceLineNo">018</span><a id="line.18">    public Beamer()</a>
+<span class="sourceLineNo">019</span><a id="line.19">    {</a>
+<span class="sourceLineNo">020</span><a id="line.20">        super("beamer","Une machine capable de distordre le temps, permet lorsqu'il est chargé dans un lieu, d'y retourner depuis n'importe quelle espace, très puissant", 100);</a>
+<span class="sourceLineNo">021</span><a id="line.21">        this.aCharge = null;</a>
+<span class="sourceLineNo">022</span><a id="line.22">    }//Beamer()</a>
+<span class="sourceLineNo">023</span><a id="line.23">    </a>
+<span class="sourceLineNo">024</span><a id="line.24">    /**</a>
+<span class="sourceLineNo">025</span><a id="line.25">     * Méthode qui retourne la Room mémorisé de l'objet courant.</a>
+<span class="sourceLineNo">026</span><a id="line.26">     * @return Room</a>
+<span class="sourceLineNo">027</span><a id="line.27">     */</a>
+<span class="sourceLineNo">028</span><a id="line.28">    public Room getCharge()</a>
+<span class="sourceLineNo">029</span><a id="line.29">    {</a>
+<span class="sourceLineNo">030</span><a id="line.30">        return this.aCharge;</a>
+<span class="sourceLineNo">031</span><a id="line.31">    }//getCharge()</a>
+<span class="sourceLineNo">032</span><a id="line.32">    </a>
+<span class="sourceLineNo">033</span><a id="line.33">    /**</a>
+<span class="sourceLineNo">034</span><a id="line.34">     * Méthode boolean permettant de dire si l'objet courant a mémorisé ou non une Room.</a>
+<span class="sourceLineNo">035</span><a id="line.35">     * @return true, si une Room dans la mémoire. False sinon.</a>
+<span class="sourceLineNo">036</span><a id="line.36">     */</a>
+<span class="sourceLineNo">037</span><a id="line.37">    public boolean estCharger()</a>
+<span class="sourceLineNo">038</span><a id="line.38">    {</a>
+<span class="sourceLineNo">039</span><a id="line.39">        if( this.aCharge == null){</a>
+<span class="sourceLineNo">040</span><a id="line.40">            return false;</a>
+<span class="sourceLineNo">041</span><a id="line.41">        }else{</a>
+<span class="sourceLineNo">042</span><a id="line.42">            return true;</a>
+<span class="sourceLineNo">043</span><a id="line.43">        }</a>
+<span class="sourceLineNo">044</span><a id="line.44">    }//estCharger()</a>
+<span class="sourceLineNo">045</span><a id="line.45">    </a>
+<span class="sourceLineNo">046</span><a id="line.46">    /**</a>
+<span class="sourceLineNo">047</span><a id="line.47">     * Méthode permettant d'associer une Room dans la mémoire(attribut) de l'objet courant.</a>
+<span class="sourceLineNo">048</span><a id="line.48">     * @param pRoom, la Room qu'on souhaite mémoriser.</a>
+<span class="sourceLineNo">049</span><a id="line.49">     */</a>
+<span class="sourceLineNo">050</span><a id="line.50">    public void charger(final Room pRoom)</a>
+<span class="sourceLineNo">051</span><a id="line.51">    {</a>
+<span class="sourceLineNo">052</span><a id="line.52">        this.aCharge = pRoom;</a>
+<span class="sourceLineNo">053</span><a id="line.53">    }//charger()</a>
+<span class="sourceLineNo">054</span><a id="line.54">    </a>
+<span class="sourceLineNo">055</span><a id="line.55">    /**</a>
+<span class="sourceLineNo">056</span><a id="line.56">     * Méthode permettant de retourner la Room dans la mémoire et de le vider.</a>
+<span class="sourceLineNo">057</span><a id="line.57">     * @return Room</a>
+<span class="sourceLineNo">058</span><a id="line.58">     */</a>
+<span class="sourceLineNo">059</span><a id="line.59">    public Room tirer()</a>
+<span class="sourceLineNo">060</span><a id="line.60">    {</a>
+<span class="sourceLineNo">061</span><a id="line.61">        Room vRoom = this.aCharge;</a>
+<span class="sourceLineNo">062</span><a id="line.62">        this.aCharge = null;</a>
+<span class="sourceLineNo">063</span><a id="line.63">        return vRoom;</a>
+<span class="sourceLineNo">064</span><a id="line.64">    }//tirer()</a>
+<span class="sourceLineNo">065</span><a id="line.65">}//Beamer</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</main>
+</body>
+</html>

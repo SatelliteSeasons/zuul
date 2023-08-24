@@ -1,0 +1,99 @@
+go ouest
+back
+back
+go ouest
+go ouest
+go sud
+go monter
+go descendre
+go sud
+go nord
+go nord
+go nord
+go est
+go est
+go nord
+go nord
+go est
+go sud
+go ouest
+go sud
+go est
+go est
+go sud
+go est
+go nord
+go sud
+go sud
+go est
+go est
+go ouest
+go ouest
+go ouest
+go ouest
+go sud
+go sud
+go sud
+go nord
+go ouest
+go descendre
+go nord
+go sud
+go monter
+go est
+go nord
+go est
+go nord
+go ouest
+regarder TNT
+regarder Soleil
+prendre TNT
+go sud
+poser TNT
+prendre TNT
+regarder
+go nord
+inventaire
+go nord
+go nord
+prendre cookie
+go sud
+poser cookie
+manger
+manger cafard
+prendre cookie
+manger cookie
+prendre cafard
+prandre pioche
+go sud
+prendre Soleil
+
+BEAMER
+
+go nord
+go nord
+go nord
+go est
+prendre beamer
+go ouest
+utiliser beamer
+go sud
+poser beamer
+go sud
+utiliser beamer
+go nord
+prendre beamer
+utiliser beamer
+go sud
+go sud
+go sud
+go sud
+
+TRAP DOOR
+
+go est
+go nord
+go sud
+go ouest
+
+
